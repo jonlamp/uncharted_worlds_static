@@ -1,0 +1,172 @@
+@keyframes glow{
+    to{
+        text-shadow: 0px 0px 1px var(--uw_base_light), 0px 0px 5px var(--uw_base);
+    }
+}
+#main_cont {
+    height: 100%;
+    width: 100%;
+    background-image: url("/resources/stars_francesco_ungaro_pexels.jpeg");
+}
+#nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    border-bottom: 2px  solid var(--uw_white);
+    /*margin-left: -1vw;*/
+    z-index: 2;
+    background-color: var(--uw_grey);
+    justify-content: space-around;
+    flex-shrink: 2;
+}
+#nav a{
+    text-decoration: none;
+    color: var(--uw_white);
+    font-size: 1.25em;
+    flex-shrink: 2;
+}
+.nav_option {
+    margin: 0vh auto;
+    padding: 2vh 5vw;
+    align-self: center;
+    flex-shrink: 3;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.nav_option:hover {
+    color: var(--uw_base_light);
+    text-decoration: underline !important;
+    animation: glow .25s forwards;
+}
+
+#main{
+    display: flex;
+    z-index: 1;
+    align-self: center;
+    background-image: linear-gradient(to bottom, rgba(40, 40, 40, 1) 65%, var(--uw_base_dark) 90%, var(--uw_base));
+    height: 100vh;
+    justify-content: center;
+}
+#main img{
+    align-self: center;
+    height: 40vh;
+    max-width: 80vw;
+}
+#content {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+#about{
+    background-color: var(--uw_grey);
+    color: var(--uw_white);
+}
+.section{
+    padding: 5vw 10vw;
+    font-size: 1.25em;
+}
+.section p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.section h2{
+    font-size: 3em;
+}
+.section h4 {
+    font-size: 1.75em;
+}
+.row {
+    display: flex;
+}
+.row div{
+    display: inline-flex;
+    padding: 0vh 2vw;
+}
+.row .flex_grid_item{
+    flex-direction: column;
+}
+#planet_svg{
+    width: 30vh;
+    align-self: center;
+    flex-shrink: 2;
+}
+.accent_text{
+    color:var(--uw_base);
+    font-size: 1.55em;
+    font-weight: bold;
+}
+#start {
+    background-color: #d1f7FF;
+    padding: 5vw 10vw;
+    color: var(--uw_grey);
+}
+#start .row{
+    justify-content: space-around;
+}
+#start img {
+    max-height: 30%;
+    object-fit: contain;
+}
+#downloads{
+    background-color: var(--uw_grey);
+    color: var(--uw_white);
+}
+#downloads .row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#downloads .row div {
+    padding: 2vh 2vw;
+    max-width: 15vw;
+}
+#downloads .row div img{
+    max-width: 10vw;
+    object-fit: contain;
+}
+#downloads a{
+    text-decoration: none;
+    color: var(--uw_white);
+}
+#downloads a:hover div{
+    text-decoration: underline !important;
+}
+#downloads h4{
+    margin: 0vh 0vw;
+    font-size: 1.5em;
+}
+#footer{
+    background-color: var(--uw_grey);
+    color: var(--uw_white);
+    border-top: 2px solid var(--uw_white);
+    text-align: center;
+    padding: 2vh 0vw;
+}
+#footer a{
+    text-decoration: none;
+    color: var(--uw_white);
+}
+@media screen and (max-width: 600px){
+    .nav_option{
+        padding: 1vh 1vw;
+        font-size: 1em !important;
+    }
+    .section .row {
+        display: block;
+    }
+    .content{
+        padding: 0vh 0vw;
+    }
+    #downloads .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #downloads .row .flex_grid_item{
+        max-width: 40vw;
+    }
+    #downloads .row .flex_grid_item h4{
+        font-size: 1em;
+    }
+}

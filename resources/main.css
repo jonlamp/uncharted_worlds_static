@@ -1,0 +1,22 @@
+@font-face{
+    font-family:"Exo 2"; 
+    src: url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+    src: url("fonts/Exo2-VariableFont_wght.ttf");
+}
+:root {
+    --uw_grey: #2A2E2D;
+    --uw_white: #FBFFFE;
+    --uw_base: #63E3C6;
+    --uw_base_dark: #1FBA98;
+    --uw_base_light: #C8FBEF;
+    --uw_acc1:#FFC970;
+    --uw_acc1_dark: #FFAF2B;
+    --uw_acc2:#FB6E84;
+    --us_acc2_dark: #f42949;
+
+}
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: "Exo 2", "Sans-Serif";
+}
